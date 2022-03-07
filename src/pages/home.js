@@ -1,7 +1,7 @@
 import React from "react";
 import http from "../lib/request";
 import Character from "../components/Character";
-import  "../detail.css"
+import  "./detail.css"
 
 class Home extends React.Component{
     state={

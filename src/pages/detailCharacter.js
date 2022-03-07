@@ -1,11 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import http from "../lib/request";
-<<<<<<< HEAD
-import "../styles.css"
-=======
-import "../pages/style.css"
->>>>>>> 01dc76642ec0b37dd1af939dfefa1638d974920b
+import "./styles.css"
 
  const DetailCharacter = () =>{
      const { id } = useParams();
