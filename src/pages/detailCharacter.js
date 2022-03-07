@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import http from "../lib/request";
-import "./detail.css"
+import styles from "../pages/styles.css"
 
-
-
+//Jonatan's part 
  const DetailCharacter = () =>{
      const { id } = useParams();
      const [character, setCharacter] = useState({});
@@ -17,18 +16,20 @@ import "./detail.css"
             setImages(character.data.images.jpg)
          }
          fetchCharacter();
-     },)
-
+     },[])
 
      return(
          <React.Fragment>
-             <div className="Details_container">
-             <h1>{character.name}</h1>  
-             <h1>{character.name_kanji}</h1>  
-             <p>{character.about}</p> 
-             <img src={image.image_url} alt = {character.name}/>
+             <div className="Character__container">
+                 <div className="Character__header">
+                    <h1 className="Character__name">{character.name}</h1>  
+                    <h1 className="Character__name_kanji">{character.name_kanji}</h1>  
+                </div>
+                <div className="Character__about">
+                    <p className="Character__about_text">{character.about}</p> 
+                    <img className="Character__image" src={image.image_url} alt = {character.name}/>
+                </div>
              </div>
-             
          </React.Fragment>
      )
  }

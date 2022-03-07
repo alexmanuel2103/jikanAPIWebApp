@@ -1,6 +1,7 @@
 import React from "react";
 import http from "../lib/request";
 import Character from "../components/Character";
+import styles from "../pages/detail.css"
 
 class Home extends React.Component{
     state={
@@ -30,11 +31,17 @@ class Home extends React.Component{
         return(
             <React.Fragment>
                  <body>
+                     <div className="title">
                      <h1>Kaguya-sama Love is War Characters</h1>
-                     <div> 
+                     <h2>Teammates: Derek Alvarado, Manuel Barraza and Jonathan Rico</h2>
+                     <h3>Group: TIDBIS41M</h3>
+                     </div>
+                     
+               
+                        <div className="character_boxes">
                         {this.state.characters.map((character) => 
-                        {return <Character character = {character}/>
-                        })}
+                            {return  <Character character = {character}/>
+                            })}
                         </div>
                  </body>
             </React.Fragment> 

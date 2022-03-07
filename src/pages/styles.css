@@ -1,0 +1,61 @@
+.Character__container{
+    background-color: lightblue;
+    width: 95%;
+    padding: 15px;
+    margin: 0px;
+    border: 10px solid lightcoral;
+    border-radius: 25px;;
+}
+.Character__header h1{
+    text-align: center;
+    font-style: oblique;
+}
+.Character__name{
+    color: #ff1a1a;
+}
+.Character__name_kanji{
+    color:  #ff4d4d;
+}
+.Character__about{
+    border: 5px solid lightcoral;
+    border-radius: 25px;;
+}
+.Character__about_text{
+    padding: 10px;
+    text-align: center;
+}
+.Character__image{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+.Character__container{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    border: 5px solid #1ce9d8;
+    margin-bottom: 50px;
+}
+.Character__image{
+    width: 150px;
+    height: 150px;
+}
+.Character__data{
+    margin-left: 10px;
+}
+.Character__data p,small{
+    margin: 0;
+    padding: 0;
+    color: rgb(63, 240, 9);
+}
+.Character__data h3{
+    color: red;
+}
+*/
