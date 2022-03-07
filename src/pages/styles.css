@@ -1,4 +1,4 @@
-#Character__container{
+.Character__container{
     background-color: lightblue;
     width: 95%;
     padding: 15px;
@@ -6,25 +6,25 @@
     border: 10px solid lightcoral;
     border-radius: 25px;;
 }
-#Character__header h1{
+.Character__header h1{
     text-align: center;
     font-style: oblique;
 }
-#Character__name{
+.Character__name{
     color: #ff1a1a;
 }
-#Character__name_kanji{
+.Character__name_kanji{
     color:  #ff4d4d;
 }
-#Character__about{
+.Character__about{
     border: 5px solid lightcoral;
     border-radius: 25px;;
 }
-#Character__about_text{
+.Character__about_text{
     padding: 10px;
     text-align: center;
 }
-#Character__image{
+.Character__image{
     height: auto;
     width: auto;
     padding-left: 10px;
