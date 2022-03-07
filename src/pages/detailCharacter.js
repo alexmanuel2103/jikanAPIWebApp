@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import http from "../lib/request";
-import "../pages/styles.css"
+import "../pages/detail.css"
 
-//Jonatan's part 
  const DetailCharacter = () =>{
      const { id } = useParams();
      const [character, setCharacter] = useState({});
