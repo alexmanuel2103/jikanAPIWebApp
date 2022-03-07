@@ -36,8 +36,6 @@ class Home extends React.Component{
                      <h2>Teammates: Derek Alvarado, Manuel Barraza and Jonathan Rico</h2>
                      <h3>Group: TIDBIS41M</h3>
                      </div>
-                     
-               
                         <div className="character_boxes">
                         {this.state.characters.map((character) => 
                             {return  <Character character = {character}/>
