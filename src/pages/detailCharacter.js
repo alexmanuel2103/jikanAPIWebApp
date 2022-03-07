@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import http from "../lib/request";
-import styles from "../pages/styles.css"
+import "../pages/styles.css"
 
 //Jonatan's part 
  const DetailCharacter = () =>{
