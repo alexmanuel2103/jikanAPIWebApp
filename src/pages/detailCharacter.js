@@ -17,7 +17,7 @@ import "./detail.css"
             setImages(character.data.images.jpg)
          }
          fetchCharacter();
-     },[])
+     },)
 
 
      return(
