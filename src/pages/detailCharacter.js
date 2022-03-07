@@ -15,7 +15,7 @@ import "./styles.css"
             setImages(character.data.images.jpg)
          }
          fetchCharacter();
-     },[])
+     },)
 
      return(
          <React.Fragment>
