@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import http from "../lib/request";
 import "./styles.css"
-
+//This functions pulls al the data for an specific character with the id as a filter
  const DetailCharacter = () =>{
      const { id } = useParams();
      const [character, setCharacter] = useState({});

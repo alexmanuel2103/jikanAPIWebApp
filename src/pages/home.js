@@ -2,7 +2,10 @@ import React from "react";
 import http from "../lib/request";
 import Character from "../components/Character";
 import  "./detail.css"
-
+/*
+Cover screen with the team's information along with the title
+of the anime characters pull for the API
+*/
 class Home extends React.Component{
     state={
         characters:[]
@@ -33,7 +36,7 @@ class Home extends React.Component{
                  <body>
                      <div className="title">
                      <h1>Kaguya-sama Love is War Characters</h1>
-                     <h2>Teammates: Derek Alvarado, Manuel Barraza and Jonathan Rico</h2>
+                     <h2>Teammates: Derek Alvarado, Manuel Barraza and Jonatan Rico</h2>
                      <h3>Group: TIDBIS41M</h3>
                      </div>
                         <div className="character_boxes">

@@ -1,8 +1,9 @@
+//URL from the API that we'll extract the data
 const URL = "https://api.jikan.moe/v4/"
 
 class http{
     static instance = new http()
-
+    //async function to pull the characters 
     getCharacters = async(id) => {
         try{
             const request = await fetch (`${URL}anime/${id}/characters`)
@@ -13,7 +14,7 @@ class http{
         }
      
     }
-
+    //obtains the data from an specific character with the ID
     getCharacter = async(id) => {
         try{
             const request = await fetch (`${URL}characters/${id}`)
@@ -23,6 +24,7 @@ class http{
             throw new Error(err);
         }
     }
+    //This async function obtains the image of each character
     getImage = async(id) => {
         try{
             const request = await fetch (`${URL}characters/${id}/pictures`)
